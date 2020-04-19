@@ -1,0 +1,65 @@
+@import "~@/style/variables.scss";
+
+.successQuote {
+	&__ul {
+		margin: 0;
+		list-style: none;
+
+		li {
+			padding-left: 25px;
+			position: relative;
+			margin-bottom: 12px;
+		}
+
+		&-green {
+			li:before {
+				content: "\2022";
+				color: $green;
+				position: absolute;
+				left: 2px;
+				top: 2px;
+			}
+		}
+
+		&-check {
+			li:after {
+				content: "";
+				width: 16px;
+				height: 16px;
+				display: inline-block;
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				top: 2px;
+			}
+
+			&__li {
+				&-check {
+					font-weight: bold;
+
+					&:after {
+						border: 2px solid $green;
+					}
+
+					&:before {
+						font-family: "Font Awesome 5 Free";
+						content: "\f00c";
+						color: $green;
+						font-size: 9px;
+						position: absolute;
+						left: 3px;
+						top: 1px;
+					}
+				}
+
+				&-uncheck {
+					color: #40a2de;
+
+					&:after {
+						border: 2px solid #40a2de;
+					}
+				}
+			}
+		}
+	}
+}

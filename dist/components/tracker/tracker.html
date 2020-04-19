@@ -1,0 +1,17 @@
+<div class="tracker">
+    <div class="tracker__container">
+        <div class="tracker__navs">
+            <div class="tracker__nav" :class="stage === 1 ? 'tracker__nav-checked' : '' " @click="setStage(1)">
+                <div>&#8544;</div>
+                <span>этап<br>отбора</span>
+            </div>
+            <div class="tracker__nav" :class="stage === 2 ? 'tracker__nav-checked' : '' " @click="setStage(2)">
+                <div>&#8545;</div>
+                <span>этап<br>отбора</span>
+            </div>
+        </div>
+        <div class="tracker__list" :class="stage === 2 ? 'tracker__list-end' : ''">
+            <state v-for="state in statusList" :key="state.id" :data="state"/>
+        </div>
+    </div>
+</div>

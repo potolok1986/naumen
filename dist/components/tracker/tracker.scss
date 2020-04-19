@@ -1,0 +1,51 @@
+@import "~@/style/variables.scss";
+
+.tracker {
+	&__container {
+		margin-top: 24px;
+		overflow: hidden;
+	}
+
+	&__navs {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		color: $grey;
+
+		div {
+			font-size: 30px;
+		}
+
+		span {
+			font-size: 12px;
+			line-height: 1;
+			margin-left: 5px;
+		}
+
+		&:hover, &-checked {
+			color: $green;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: nowrap;
+		position: relative;
+		transition: left 1s ease-out;
+		margin-top: 20px;
+		left: 0;
+		&-end {
+			left: calc(-100% + 32px);
+		}
+		.state {
+			min-width: calc(100% / 7);
+			flex: 1;
+			display: inline-block;
+		}
+	}
+}

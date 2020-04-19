@@ -1,0 +1,11 @@
+<div class="state">
+    <div class="state__container" :class="{selected: data.selected}">
+        <div class="state__button" :class="classObject">
+            <div class="state__circle" @click="selectStateById(data.id)">
+                <i v-if="data.checked && !data.selected" class="fa fa-check"/>
+                <template v-else>{{data.id}}</template>
+            </div>
+        </div>
+        <div class="state__title" v-html="data.name"/>
+    </div>
+</div>
