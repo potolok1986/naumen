@@ -11,7 +11,7 @@
   "dependencies": {
     "vue": "^2.6.10",
     "vuex": "^3.1.1",
-    "vue-loader": "^14.2.4",
+    "vue-loader": "^17.0.1",
     "vue-template-compiler": "^2.6.10"
   },
   "devDependencies": {
@@ -22,15 +22,15 @@
     "@babel/plugin-proposal-optional-chaining": "^7.6.0",
     "@babel/preset-env": "^7.6.3",
     "autoprefixer": "^9.1.5",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^1.0.0",
-    "file-loader": "^2.0.0",
-    "html-webpack-plugin": "^4.0.0-beta.5",
-    "mini-css-extract-plugin": "^0.4.3",
+    "babel-loader": "^8.3.0",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
     "node-sass": "^4.9.4",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.1.0",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "postcss-loader": "^7.0.2",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
